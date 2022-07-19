@@ -1,0 +1,71 @@
+﻿DEBUG 2022-06-30 14:30:24,093 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-06-30 14:30:24,393 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2022-06-30 14:30:24,416 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.Migrator.SimpleTaskAppMigratorModule, Acme.SimpleTaskApp.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,417 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppEntityFrameworkModule, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.SimpleTaskAppCoreModule, Acme.SimpleTaskApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:24,421 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2022-06-30 14:30:24,898 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppDbContext, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:30:25,162 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2022-06-30 14:30:25,218 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-06-30 14:30:25,260 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-06-30 14:30:25,279 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SimpleTaskApp
+INFO  2022-06-30 14:30:25,327 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Host database: server=DESKTOP-54436SJ\SQLEXPRESS;database=SimpleTaskAppDb;trusted_connection=True
+INFO  2022-06-30 14:30:25,327 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2022-06-30 14:30:27,395 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration started...
+INFO  2022-06-30 14:30:29,457 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration completed.
+INFO  2022-06-30 14:30:29,458 [1    ] Acme.SimpleTaskApp.Migrator.Log          - --------------------------------------------------------
+INFO  2022-06-30 14:30:29,498 [1    ] Acme.SimpleTaskApp.Migrator.Log          - All databases have been migrated.
+DEBUG 2022-06-30 14:30:33,731 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2022-06-30 14:30:33,731 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2022-06-30 14:34:28,699 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-06-30 14:34:28,770 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2022-06-30 14:34:28,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.Migrator.SimpleTaskAppMigratorModule, Acme.SimpleTaskApp.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppEntityFrameworkModule, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.SimpleTaskAppCoreModule, Acme.SimpleTaskApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,795 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:28,796 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2022-06-30 14:34:29,012 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppDbContext, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-06-30 14:34:29,247 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2022-06-30 14:34:29,296 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-06-30 14:34:29,338 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-06-30 14:34:29,357 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SimpleTaskApp
+INFO  2022-06-30 14:34:29,403 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Host database: server=DESKTOP-54436SJ\SQLEXPRESS;database=SimpleTaskAppDb;trusted_connection=True
+INFO  2022-06-30 14:34:29,403 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2022-06-30 14:34:31,331 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration started...
+INFO  2022-06-30 14:34:33,024 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration completed.
+INFO  2022-06-30 14:34:33,024 [1    ] Acme.SimpleTaskApp.Migrator.Log          - --------------------------------------------------------
+INFO  2022-06-30 14:34:33,067 [1    ] Acme.SimpleTaskApp.Migrator.Log          - All databases have been migrated.
+DEBUG 2022-07-01 15:33:04,563 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2022-07-01 15:33:04,908 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2022-07-01 15:33:05,005 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.Migrator.SimpleTaskAppMigratorModule, Acme.SimpleTaskApp.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,007 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppEntityFrameworkModule, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Acme.SimpleTaskApp.SimpleTaskAppCoreModule, Acme.SimpleTaskApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:05,012 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2022-07-01 15:33:05,573 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Acme.SimpleTaskApp.EntityFrameworkCore.SimpleTaskAppDbContext, Acme.SimpleTaskApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2022-07-01 15:33:06,175 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2022-07-01 15:33:06,224 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2022-07-01 15:33:06,275 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2022-07-01 15:33:06,292 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: SimpleTaskApp
+INFO  2022-07-01 15:33:06,361 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Host database: server=DESKTOP-54436SJ\SQLEXPRESS;database=SimpleTaskAppDb;trusted_connection=True
+INFO  2022-07-01 15:33:06,364 [1    ] Acme.SimpleTaskApp.Migrator.Log          - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2022-07-01 15:33:08,824 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration started...
+INFO  2022-07-01 15:33:11,872 [1    ] Acme.SimpleTaskApp.Migrator.Log          - HOST database migration completed.
+INFO  2022-07-01 15:33:11,872 [1    ] Acme.SimpleTaskApp.Migrator.Log          - --------------------------------------------------------
+INFO  2022-07-01 15:33:11,950 [1    ] Acme.SimpleTaskApp.Migrator.Log          - All databases have been migrated.
