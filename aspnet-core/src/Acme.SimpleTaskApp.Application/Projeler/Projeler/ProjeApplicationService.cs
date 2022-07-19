@@ -17,6 +17,7 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
         }
         public async Task<List<ProjeDto>> GetProjeList()
         {
+            //selam 
             //var entitylist = await _repository.GetAll().Where(a => a.Musteri.FullName == "TEst")
             //    .Take(10).Skip(0).ToListAsync();
             //var toplamCount = await _repository.GetAll().Where(a => a.Musteri.FullName == "TEst").CountAsync();
