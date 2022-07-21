@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Repositories;
+using Abp.UI;
 using Acme.SimpleTaskApp.Projeler.Gorevler.GorevlerDtos;
 using System;
 using System.Collections.Generic;
@@ -26,12 +27,18 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
                 BaslamaZamani = e.BaslamaZamani,
                 DeveloperId = e.DeveloperId,
 
- 
+
 
             }).ToList();
         }
         public async Task GorevEkle(GorevEkleDto input)
         {
+            if (!input.ProjeId.HasValue || input.ProjeId == 0)
+            {
+                throw new UserFriendlyException("Proje Bulunamadı");
+            }
+
+
             var entity = new Gorev
             {
                 ProjeID = input.ProjeId,
@@ -42,13 +49,15 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
 
             };
 
+
+
             await _repository.InsertAsync(entity);
         }
         public async Task GorevGuncelle(GorevGuncelleDto input)
         {
             if (!input.GorevId.HasValue || input.GorevId == 0)
             {
-                throw new System.Exception("Gorev Bulunmadı");
+                throw new UserFriendlyException("Gorev Bulunmadı");
             }
             var entity = await _repository.GetAsync(input.GorevId.Value);
             entity.GorevTanimi = input.GorevTanimi;

@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Repositories;
+using Abp.UI;
 using Acme.SimpleTaskApp.Projeler;
 using Acme.SimpleTaskApp.Projeler.Customers.CustomersDtos;
 using System;
@@ -30,6 +31,10 @@ namespace Acme.SimpleTaskApp.Projeler.Customers
         }
         public async Task MusteriEkle(CustomerEkleDto input)
         {
+            if (string.IsNullOrEmpty(input.CustomerName))
+            {
+                throw new UserFriendlyException("Müsteri Adı Boş Olamaz");
+            }
             var entity = new Customer
             {
                 CustomerName = input.CustomerName,
@@ -47,11 +52,11 @@ namespace Acme.SimpleTaskApp.Projeler.Customers
             //}
             if (string.IsNullOrEmpty(input.CustomerName))
             {
-                throw new System.Exception("Proje Adı Boş Olamaz");
+                throw new UserFriendlyException("Müsteri Adı Boş Olamaz");
             }
             if (!input.CustomerId.HasValue || input.CustomerId == 0)
             {
-                throw new System.Exception("Müşteri Bulunamadı");
+                throw new UserFriendlyException("Müşteri Bulunamadı");
             }
 
             var entity = await _repository.GetAsync(input.CustomerId.Value);

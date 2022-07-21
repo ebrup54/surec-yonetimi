@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Repositories;
+using Abp.UI;
 using Acme.SimpleTaskApp.Projeler;
 using Acme.SimpleTaskApp.Projeler.Projeler.ProjelerDtos;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
                 ProjeId = e.Id,
                 ProjeAdi = e.ProjeAdi,
                 Description = e.Description,
-                MusteriAdi = e.Musteri.CustomerName,
+
                 BaslamaTarihi = e.BaslamaTarihi,
                 Durum= e.Durum,
                 BitisTarihi = e.BitisTarihi,
@@ -40,6 +41,10 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
 
         public async Task ProjeEkle(ProjeEkleDto input)
         {
+            if (string.IsNullOrEmpty(input.ProjeAdi))
+            {
+                throw new UserFriendlyException("Proje Adı Boş Olamaz");
+            }
 
             var entity = new Proje
             {
@@ -54,15 +59,15 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
         {
             if (!input.ProjeId.HasValue || input.ProjeId == 0)
             {
-                throw new System.Exception("Proje Bulunamadı");
+                throw new UserFriendlyException("Proje Bulunamadı");
             }
             if (string.IsNullOrEmpty(input.ProjeAdi))
             {
-                throw new System.Exception("Proje Adı Boş Olamaz");
+                throw new UserFriendlyException("Proje Adı Boş Olamaz");
             }
             if (!input.CustomerId.HasValue || input.CustomerId == 0)
             {
-                throw new System.Exception("Müşteri Bulunamadı");
+                throw new UserFriendlyException("Müşteri Bulunamadı");
             }
 
             //-
