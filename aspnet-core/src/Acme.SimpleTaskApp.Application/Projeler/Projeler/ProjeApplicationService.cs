@@ -65,7 +65,7 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
                 throw new System.Exception("Müşteri Bulunamadı");
             }
 
-
+            //-
             var entity = await _repository.GetAsync(input.ProjeId.Value);
             entity.ProjeAdi = input.ProjeAdi;
             entity.Description = input.Description;
