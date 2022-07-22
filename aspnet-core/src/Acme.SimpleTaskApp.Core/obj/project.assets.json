@@ -7496,19 +7496,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NİGEM\\.nuget\\packages\\": {}
+    "C:\\Users\\Nigem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\Acme.SimpleTaskApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\Acme.SimpleTaskApp.Core.csproj",
       "projectName": "Acme.SimpleTaskApp.Core",
-      "projectPath": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\Acme.SimpleTaskApp.Core.csproj",
-      "packagesPath": "C:\\Users\\NİGEM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\obj\\",
+      "projectPath": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\Acme.SimpleTaskApp.Core.csproj",
+      "packagesPath": "C:\\Users\\Nigem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NİGEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nigem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

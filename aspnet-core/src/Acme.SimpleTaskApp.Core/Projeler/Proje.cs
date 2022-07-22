@@ -23,7 +23,7 @@ namespace Acme.SimpleTaskApp.Projeler
 
         [ForeignKey(nameof(MusteriId))]
         public int MusteriId { get; set; }
-        public virtual Customer Musteri { get; set; }
+        public virtual Musteri Musteri { get; set; }
 
 
 

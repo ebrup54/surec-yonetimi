@@ -11,7 +11,7 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler.ProjelerDtos
 
         public string ProjeAdi { get; set; }
         public string Description { get; set; }
-        public int CustomerId { get; set; }
+        public int MusteriId { get; set; }
 
     }
 }

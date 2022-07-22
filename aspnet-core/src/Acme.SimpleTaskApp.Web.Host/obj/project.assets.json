@@ -9474,19 +9474,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NİGEM\\.nuget\\packages\\": {}
+    "C:\\Users\\Nigem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\Acme.SimpleTaskApp.Web.Host.csproj",
+      "projectUniqueName": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\Acme.SimpleTaskApp.Web.Host.csproj",
       "projectName": "Acme.SimpleTaskApp.Web.Host",
-      "projectPath": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\Acme.SimpleTaskApp.Web.Host.csproj",
-      "packagesPath": "C:\\Users\\NİGEM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\obj\\",
+      "projectPath": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\Acme.SimpleTaskApp.Web.Host.csproj",
+      "packagesPath": "C:\\Users\\Nigem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NİGEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nigem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9500,8 +9500,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Core\\Acme.SimpleTaskApp.Web.Core.csproj": {
-              "projectPath": "C:\\Users\\NİGEM\\Source\\Repos\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Core\\Acme.SimpleTaskApp.Web.Core.csproj"
+            "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Core\\Acme.SimpleTaskApp.Web.Core.csproj": {
+              "projectPath": "C:\\Users\\Nigem\\source\\repos\\tarikkolac\\abp3\\aspnet-core\\src\\Acme.SimpleTaskApp.Web.Core\\Acme.SimpleTaskApp.Web.Core.csproj"
             }
           }
         }

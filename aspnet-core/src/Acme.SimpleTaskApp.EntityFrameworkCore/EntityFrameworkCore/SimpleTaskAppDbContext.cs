@@ -17,7 +17,7 @@ namespace Acme.SimpleTaskApp.EntityFrameworkCore
         //public DbSet<Masa> Masalar { get; set; }
         //public DbSet<Cuzdan> Cuzdanlar { get; set; }
         //public DbSet<Agac> Agaclar { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Musteri> Customers { get; set; }
         //public DbSet<Developer> Developers { get; set; }
         public DbSet<Gorev> Gorevler { get; set; }
         public DbSet<Proje> Proje { get; set; }

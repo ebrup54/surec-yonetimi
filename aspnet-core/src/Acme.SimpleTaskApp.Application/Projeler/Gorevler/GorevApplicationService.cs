@@ -16,6 +16,11 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
         {
             _repository = repository;
         }
+
+
+
+
+
         public async Task<List<GorevDto>> GetGorevList()
         {
             var entitylist = await _repository.GetAllListAsync();
@@ -31,6 +36,10 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
 
             }).ToList();
         }
+
+
+
+
         public async Task GorevEkle(GorevEkleDto input)
         {
             if (!input.ProjeId.HasValue || input.ProjeId == 0)
@@ -48,11 +57,12 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
                 BaslamaZamani = input.BaslamaZamani,
 
             };
-
-
-
             await _repository.InsertAsync(entity);
         }
+
+
+
+
         public async Task GorevGuncelle(GorevGuncelleDto input)
         {
             if (!input.GorevId.HasValue || input.GorevId == 0)
@@ -65,6 +75,9 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
             entity.DeveloperId = input.DeveloperId;
 
         }
+
+
+
 
         public async Task DeleteGorev(int id)
         {
