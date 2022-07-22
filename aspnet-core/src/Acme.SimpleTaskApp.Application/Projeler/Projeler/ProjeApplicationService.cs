@@ -49,6 +49,7 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
             {
                 throw new UserFriendlyException("Proje Adı Boş Olamaz");
             }
+         
 
             var entity = new Proje
             {
@@ -73,9 +74,9 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
             {
                 throw new UserFriendlyException("Proje Adı Boş Olamaz");
             }
-            if (!input.CustomerId.HasValue || input.CustomerId == 0)
+            if (!input.MusteriId.HasValue || input.MusteriId == 0)
             {
-                throw new UserFriendlyException("Müşteri Bulunamadı");
+                throw new UserFriendlyException("Geçersiz Müşteri Id");
             }
 
             //-

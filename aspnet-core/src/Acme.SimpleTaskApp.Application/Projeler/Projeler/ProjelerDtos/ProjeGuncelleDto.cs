@@ -11,8 +11,8 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler.ProjelerDtos
         public int? ProjeId { get; set; }
         public string ProjeAdi { get; set; }
         public string Description { get; set; }
-        public int? CustomerId { get; set; }
-        public string CustomerName { get; set; }
+        public int? MusteriId { get; set; }
+        public string MusteriAdi { get; set; }
         public DateTime BitisTarihi { get; set; }
         public DurumEnum Durum { get; set; }
 

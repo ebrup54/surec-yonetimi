@@ -44,7 +44,7 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
         {
             if (!input.ProjeId.HasValue || input.ProjeId == 0)
             {
-                throw new UserFriendlyException("Proje Bulunamadı");
+                throw new UserFriendlyException("Geçersiz Proje Id");
             }
 
 
@@ -67,7 +67,7 @@ namespace Acme.SimpleTaskApp.Projeler.Gorevler
         {
             if (!input.GorevId.HasValue || input.GorevId == 0)
             {
-                throw new UserFriendlyException("Gorev Bulunmadı");
+                throw new UserFriendlyException("Geçersiz Görev Id");
             }
             var entity = await _repository.GetAsync(input.GorevId.Value);
             entity.GorevTanimi = input.GorevTanimi;
