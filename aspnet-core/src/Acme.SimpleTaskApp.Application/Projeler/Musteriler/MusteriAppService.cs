@@ -20,7 +20,7 @@ namespace Acme.SimpleTaskApp.Projeler.Customers
 
 
 
-        public async Task<List<MusteriDto>> MusteriListesi()
+        public async Task<List<MusteriDto>> GetMusteriList()
         {
             var entitylist = await _repository.GetAllListAsync();
             return entitylist.Select(e => new MusteriDto
@@ -79,7 +79,7 @@ namespace Acme.SimpleTaskApp.Projeler.Customers
 
 
 
-        public async Task DeleteCustomer(int id)
+        public async Task DeleteMusteri(int id)
         {
             await _repository.DeleteAsync(id);
         }
