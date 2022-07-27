@@ -491,7 +491,7 @@ export class RoleServiceProxy {
      * @return Success
      */
     getRoleForEdit(id: number | undefined): Observable<GetRoleForEditOutput> {
-        let url_ = this.baseUrl + "/api/services/app/Role/GetRoleForEdit?";
+        let url_ = this.baseUrl + "/api/servinces/app/Role/GetRoleForEdit?";
         if (id === null)
             throw new Error("The parameter 'id' cannot be null.");
         else if (id !== undefined)
