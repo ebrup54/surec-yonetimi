@@ -1,3 +1,6 @@
+// bir deneme değişikliği
+
+
 # Important
 
 Issues of this repository are tracked on https://github.com/aspnetboilerplate/aspnetboilerplate. Please create your issues on https://github.com/aspnetboilerplate/aspnetboilerplate/issues.
