@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Acme.SimpleTaskApp.Projeler
 {
+    
     public class Proje : FullAuditedEntity
     {
         //id tanımlanmalı mı 
@@ -20,6 +21,7 @@ namespace Acme.SimpleTaskApp.Projeler
         public DurumEnum Durum { get; set; }
         public DateTime BaslamaTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
+        public DateTime MusteriBitisTarihi { get; set; }
 
         [ForeignKey(nameof(MusteriId))]
         public int MusteriId { get; set; }

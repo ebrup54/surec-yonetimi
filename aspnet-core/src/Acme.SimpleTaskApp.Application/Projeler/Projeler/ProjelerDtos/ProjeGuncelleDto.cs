@@ -14,6 +14,8 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler.ProjelerDtos
         public int? MusteriId { get; set; }
         public string MusteriAdi { get; set; }
         public DateTime BitisTarihi { get; set; }
+        public DateTime MusteriBitisTarihi { get; set; }
+        public DateTime MusteriBaslamaTarihi { get; set; }
         public DurumEnum Durum { get; set; }
 
     }

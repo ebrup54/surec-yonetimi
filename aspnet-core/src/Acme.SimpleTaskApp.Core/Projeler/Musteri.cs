@@ -13,7 +13,6 @@ namespace Acme.SimpleTaskApp.Projeler
     public class Musteri : FullAuditedEntity
     {
         public string MusteriAdi { get; set; }
-
         public string Iletisim { get; set; }
         public string Aciklama { get; set; }
         public User User { get; set; }

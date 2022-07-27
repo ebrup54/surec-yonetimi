@@ -1631,57 +1631,6 @@ namespace Acme.SimpleTaskApp.Migrations
                     b.ToTable("AbpTenants");
                 });
 
-            modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Customer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("CreatorUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("CustomerContact")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long?>("DeleterUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<DateTime?>("DeletionTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("LastModificationTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("LastModifierUserId")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<long?>("UserId1")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId1");
-
-                    b.ToTable("Customers");
-                });
-
             modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Gorev", b =>
                 {
                     b.Property<int>("Id")
@@ -1738,6 +1687,57 @@ namespace Acme.SimpleTaskApp.Migrations
                     b.ToTable("Gorevler");
                 });
 
+            modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Musteri", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Aciklama")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("CreatorUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("DeleterUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("DeletionTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Iletisim")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("LastModifierUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("MusteriAdi")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<long?>("UserId1")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Musteriler");
+                });
+
             modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Proje", b =>
                 {
                     b.Property<int>("Id")
@@ -1778,6 +1778,9 @@ namespace Acme.SimpleTaskApp.Migrations
 
                     b.Property<long?>("LastModifierUserId")
                         .HasColumnType("bigint");
+
+                    b.Property<DateTime>("MusteriBitisTarihi")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("MusteriId")
                         .HasColumnType("int");
@@ -2052,15 +2055,6 @@ namespace Acme.SimpleTaskApp.Migrations
                     b.Navigation("LastModifierUser");
                 });
 
-            modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Customer", b =>
-                {
-                    b.HasOne("Acme.SimpleTaskApp.Authorization.Users.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId1");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Gorev", b =>
                 {
                     b.HasOne("Acme.SimpleTaskApp.Authorization.Users.User", "Developer")
@@ -2076,9 +2070,18 @@ namespace Acme.SimpleTaskApp.Migrations
                     b.Navigation("Proje");
                 });
 
+            modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Musteri", b =>
+                {
+                    b.HasOne("Acme.SimpleTaskApp.Authorization.Users.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Acme.SimpleTaskApp.Projeler.Proje", b =>
                 {
-                    b.HasOne("Acme.SimpleTaskApp.Projeler.Customer", "Musteri")
+                    b.HasOne("Acme.SimpleTaskApp.Projeler.Musteri", "Musteri")
                         .WithMany()
                         .HasForeignKey("MusteriId")
                         .OnDelete(DeleteBehavior.Cascade)

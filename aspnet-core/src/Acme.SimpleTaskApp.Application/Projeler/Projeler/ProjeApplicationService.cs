@@ -40,6 +40,40 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
         }
 
 
+        //Müşteri için Proje görüntüleme tablosu
+
+        public async Task<List<Proje>> GetProjeListMusteri(int musteriId)
+        {
+            var entitylist = await _repository.GetAllListAsync();
+            var projezart = new List<Proje>();
+            int Control = 0;
+            foreach (var item in entitylist)
+            {
+                if (item.Id == musteriId)
+                {
+                    projezart.Add(item);
+                    Control++;
+                }
+            }
+            if (Control > 0)
+            {
+                return projezart.Select(e => new Proje
+                {
+                    ProjeAdi = e.ProjeAdi,
+                    Description = e.Description,
+                    BaslamaTarihi = e.BaslamaTarihi,
+                    Durum = e.Durum,
+                    MusteriBitisTarihi = e.MusteriBitisTarihi,
+                }).ToList();
+
+            }
+            else
+            {
+                throw new UserFriendlyException("Projeniz Bulunmamaktadır");
+            }
+        }
+
+
 
 
 
@@ -60,7 +94,6 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
             await _repository.InsertAsync(entity);
 
         }
-
 
 
 
@@ -85,12 +118,26 @@ namespace Acme.SimpleTaskApp.Projeler.Projeler
             entity.Description = input.Description;
             entity.BitisTarihi = input.BitisTarihi;
             entity.Durum = input.Durum;
+            entity.MusteriBitisTarihi = input.MusteriBitisTarihi;
 
             await _repository.UpdateAsync(entity);
 
         }
 
 
+
+        //Müşteri Açıklama Güncelleme
+        public async Task ProjeGuncelleMusteri(ProjeGuncelleDto input)
+        {
+         
+            
+            var entity = await _repository.GetAsync(input.ProjeId.Value);
+           
+            entity.Description = input.Description;
+
+            await _repository.UpdateAsync(entity);
+
+        }
 
 
 

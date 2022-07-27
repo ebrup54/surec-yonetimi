@@ -38,7 +38,6 @@ import { SidebarComponent } from './layout/sidebar.component';
 import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
-import { DenemeComponent } from './deneme/deneme.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +68,6 @@ import { DenemeComponent } from './deneme/deneme.component';
     SidebarLogoComponent,
     SidebarUserPanelComponent,
     SidebarMenuComponent,
-    DenemeComponent
   ],
   imports: [
     CommonModule,
